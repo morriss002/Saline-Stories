@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+
+nav {
+	float: right;
+	padding-right: 20px;
+	padding-top: 20px;
+	color: #FBF7F7;
+}
+
+body {
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: arial;
+}
+
+nav ul li {
+	list-style-type: none;
+	padding-left: 20px;
+	text-align: right;
+	display:inline-block;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.hero-box {
+	height: 300px;
+	/*How can I get the image to position better?*/
+	background-color: #0E0000;
+	background-image: url("images/IMG_5412.JPG");
+	background-size: cover;
+	padding-top: 50px;
+	width:98%;
+	margin:1%;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 80;
+    padding-top: 10px;
+    padding-left: 60px;
+    text-align: left;
+    text-shadow: 1px 0px;
+}
+
+.tiles img {
+	width: 100%;
+	height:auto;
+	display: block;
+}
+
+.tiles {
+	width:31.3%;
+	float:left;
+	margin:1%;
+}
+
+/*Tablet*/
+@media ( max-width : 768px ){
+	h1 {
+		font-size: 40px;
+		text-align: center;
+		padding-left: 0px; 
+	}
+	.tiles{
+		width:48%;
+	}
+	nav ul li {
+		display: block
+	}
+}
+
+
+/*Mobile*/
+@media (max-width:400px){
+	h1 {
+		font-size: 25px; 
+	}
+	.tiles{
+		width:98%;
+	}
+}

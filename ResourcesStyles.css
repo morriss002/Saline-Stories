@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+
+nav {
+	float: right;
+	padding-right: 20px;
+	padding-top: 20px;
+	color: #0F0F0F;
+}
+
+body {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+}
+
+h2{padding-left: 20px}
+h3{padding-left: 30px}
+h4{padding-left: 30px}
+p{padding-left: 40px}
+
+
+
+nav ul li {
+	list-style-type: none;
+	padding-left: 20px;
+	text-align: right;
+	display:inline-block;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #1E2068;
+}
+
+.hero-box {
+	height: 300px;
+	background-color: #0E0000;
+	background-image: url("images/IMG_1195.JPG");
+	background-size:cover;
+	/*How can I get the image to position better?*/
+	padding-top: 50px;
+	width:98%;
+	margin:1%;
+}
+
+h1 {
+    color: #1E2068;
+    font-size: 80;
+    padding-top: 10px;
+    padding-left: 60px;
+    text-align: left;
+    text-shadow: 1.5px 0px;
+}
+
+a{
+	color: #000005
+}
+
+.tiles img {
+	width: 100%;
+	height:auto;
+	display: block;
+}
+
+.tiles {
+	width:31.3%;
+	float:left;
+	margin:1%;
+}
+
+/*Tablet*/
+@media ( max-width : 768px ){
+	h1 {
+		font-size: 40px;
+		text-align: center;
+		padding-left: 0px; 
+	}
+	.tiles{
+		width:48%;
+	}
+	nav ul li {
+		display: block
+	}
+}
+
+
+/*Mobile*/
+@media (max-width:400px){
+	h1 {
+		font-size: 25px; 
+	}
+	.tiles{
+		width:98%;
+	}
+}
